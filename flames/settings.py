@@ -24,7 +24,7 @@ SECRET_KEY = 'fv45)!jng#bia5t=u6f)dhhbpb=ux!fj^kwuiywgj339x$@5_g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = [".herokuapp.com", ]
 SITE_TITLE = "Flames Game"
 
