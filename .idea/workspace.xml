@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18abd81d-f67f-4673-a306-dd0f2327f229" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/project-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,21 +31,21 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\drda\projects\flames" />
-      <recent name="C:\Users\drda\projects\flames\fla\static" />
-      <recent name="C:\Users\drda\projects\flames\templates" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Nanthakumar J J\Desktop\projects\flamessite\nandy-flamesgame\static" />
       <recent name="F:\" />
       <recent name="C:\Users\drda\projects\flames\staticfiles" />
       <recent name="C:\Users\drda\projects\flames\static" />
       <recent name="C:\Users\drda\projects\flames\templates" />
-      <recent name="C:\Users\drda\projects\flames\assets\admin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\drda\projects\flames" />
+      <recent name="C:\Users\drda\projects\flames\fla\static" />
+      <recent name="C:\Users\drda\projects\flames\templates" />
     </key>
   </component>
   <component name="RunManager" selected="Python.flames">
