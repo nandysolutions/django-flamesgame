@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 {% load static %}
 
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <title>Flames Game</title>
 <head>
     <meta charset="UTF-8">
-    <meta property="og:image" content="{% static 'love.gif' %}"/>
+    <meta property="og:image" content="{% static 'paper1.jpg' %}"/>
     <meta property="og:image:alt" content="{% static 'paper1.jpg' %}"/>
     <meta name="google-site-verification" content="5BaDU3C3ougJeTQQ4GDfyf33NqV9xNKfyhbX90KkJpc"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,6 +24,8 @@
         $(document).ready(function(){
             $("#exampleModal").modal('show');
         });
+
+
 
 
 
