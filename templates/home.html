@@ -3,11 +3,12 @@
 <!DOCTYPE html>
 {% load static %}
 
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
 <title>Flames Game</title>
 <head>
     <meta charset="UTF-8">
-    <meta name="google-site-verification" content="5BaDU3C3ougJeTQQ4GDfyf33NqV9xNKfyhbX90KkJpc" />
+    <meta property="og:image" content="{% static 'love.gif' %}" />
+    <meta name="google-site-verification" content="5BaDU3C3ougJeTQQ4GDfyf33NqV9xNKfyhbX90KkJpc"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="{%  static 'favicon.ico' %}">
     <link rel="stylesheet" href="{% static 'style.css' %}"/>
@@ -22,6 +23,7 @@
         $(document).ready(function(){
             $("#exampleModal").modal('show');
         });
+
 
 
     </script>
