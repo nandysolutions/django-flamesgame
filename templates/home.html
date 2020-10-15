@@ -42,6 +42,12 @@
     </script>
     {% endif %}
     <script>
+document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+    }, false);
+    </script>
+
+    <script>
         $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
