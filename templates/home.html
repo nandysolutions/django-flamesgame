@@ -34,6 +34,7 @@
 
 
 
+
     </script>
     {% endif %}
 </head>
@@ -90,17 +91,28 @@
     </div>
 </div>
 {% if messages %}
-<div class="msg">
+<div class="fixed-top" id="msgcontainer">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-6">
+            <div class="col-auto">
                 {% for message in messages %}
+                {% if 'error' in message.tags %}
                 <div class="alert alert-danger rounded-pill">
-                    <div style="text-align: center;padding: 10px">
+                    <div>
                         <strong>{{ message }}</strong>
                     </div>
-                    {% endfor %}
                 </div>
+                {% endif %}
+                {% endfor %}
+                {% for message in messages %}
+                {% if 'success' in message.tags %}
+                <div class="alert alert-success rounded-pill">
+                    <div style="padding: 0px">
+                        <strong>{{ message }}</strong>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
             </div>
         </div>
     </div>
