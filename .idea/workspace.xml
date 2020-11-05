@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18abd81d-f67f-4673-a306-dd0f2327f229" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/fla/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/fla/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flames/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/flames/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

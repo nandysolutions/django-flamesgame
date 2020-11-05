@@ -24,7 +24,7 @@ SECRET_KEY = 'fv45)!jng#bia5t=u6f)dhhbpb=ux!fj^kwuiywgj339x$@5_g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = [".herokuapp.com", ]
 SITE_TITLE = "Flames Game"
 
@@ -123,9 +123,9 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = "/static/"
-#STATICFILES_DIRS = (
+# STATICFILES_DIRS = (
 #   os.path.join(BASE_DIR, 'static'),
-#)
+# )
 
-#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
