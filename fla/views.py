@@ -14,7 +14,7 @@ def home(request):
     if request.method == "POST":
         n1 = request.POST.get('n1')
         n2 = request.POST.get('n2')
-        if n1 is not None and n2 is not None or len(str(n1)) <= 1 or len(str(n2)) <= 1:
+        if len(str(n1)) <= 1 or len(str(n2)) <= 1:
             messages.error(request, "Please ensure that you have given some text in both fields")
             return render(request, 'home.html')
         elif n1 == n2 and n1 != None and n2 != None:
