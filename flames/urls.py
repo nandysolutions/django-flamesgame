@@ -21,3 +21,4 @@ urlpatterns = [
 
                   path('admin/', admin.site.urls),
               ]
+handler404 = 'fla.views.handler404'
