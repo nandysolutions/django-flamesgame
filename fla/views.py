@@ -18,8 +18,8 @@ def home(request):
             messages.error(request, "Please ensure that you have given some text in both fields")
             return render(request, 'home.html')
         elif n1 != None and n2 != None:
-            if n1.isnumeric() or n2.isnumeric():
-                messages.error(request, "Please provide only valid names not numbers :(")
+            if not n1.isalpha() or not n2.isalpha():
+                messages.error(request, "Please provide only valid names :(")
                 return render(request, 'home.html')
             elif n1 == n2:
                 messages.error(request, "We cant guess your relation! Try initials combined with names.")
