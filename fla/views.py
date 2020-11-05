@@ -13,7 +13,7 @@ def home(request):
     f = Flames()
     n1 = request.POST.get('n1')
     n2 = request.POST.get('n2')
-    if len(str(n1)) == 0 or len(str(n2)) == 0:
+    if len(str(n1)) <= 1 or len(str(n2)) <= 1:
         messages.error(request, "Please ensure that you have given some text in both fields")
         return render(request, 'home.html')
     elif n1 == n2 and n1 != None and n2 != None:
@@ -23,7 +23,8 @@ def home(request):
         else:
             messages.error(request, "We cant guess your relation! Try initials combined with names.")
             return render(request, 'home.html')
-    elif n1 == None and n2 == None:
+    elif n1 is None and n2 is None:
+        messages.error(request, "Please ensure that you have given some text in both fields")
         return render(request, 'home.html')
     else:
         str1 = n1
