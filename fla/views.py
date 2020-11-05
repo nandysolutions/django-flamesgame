@@ -17,11 +17,11 @@ def home(request):
         if len(str(n1)) <= 1 or len(str(n2)) <= 1:
             messages.error(request, "Please ensure that you have given some text in both fields")
             return render(request, 'home.html')
-        elif n1 == n2 and n1 != None and n2 != None:
+        elif n1 != None and n2 != None:
             if n1.isnumeric() or n2.isnumeric():
-                messages.error(request, "Please provide only valid names not numbers.")
+                messages.error(request, "Please provide only valid names not numbers :(")
                 return render(request, 'home.html')
-            else:
+            elif n1 == n2:
                 messages.error(request, "We cant guess your relation! Try initials combined with names.")
                 return render(request, 'home.html')
         elif n1 is None and n2 is None:
