@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18abd81d-f67f-4673-a306-dd0f2327f229" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/flames/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/flames/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/style1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/404.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +32,7 @@
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
@@ -40,8 +42,8 @@
       <recent name="C:\Users\drda\projects\flames\templates" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Nanthakumar J J\Desktop\projects\flamessite\nandy-flamesgame\templates" />
       <recent name="C:\Users\Nanthakumar J J\Desktop\projects\flamessite\nandy-flamesgame\static" />
+      <recent name="C:\Users\Nanthakumar J J\Desktop\projects\flamessite\nandy-flamesgame\templates" />
       <recent name="F:\" />
       <recent name="C:\Users\drda\projects\flames\staticfiles" />
       <recent name="C:\Users\drda\projects\flames\static" />
