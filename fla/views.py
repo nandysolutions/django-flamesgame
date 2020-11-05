@@ -27,8 +27,7 @@ def home(request):
         elif n1 is None and n2 is None:
             messages.error(request, "Please ensure that you have given some text in both fields")
             return render(request, 'home.html')
-        else:
-            str1 = n1
+        str1 = n1
         str2 = n2
         if '.' in str1 or '.' in str2:
             str1 = str1.split('.')
