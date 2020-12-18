@@ -15,24 +15,12 @@ def handler404(request, exception):
 def handler500(request, exception):
     return render(request, '500.html', status=500)
 
+
 def home(request):
     f = Flames()
     if request.method == "POST":
         n1 = request.POST.get('n1')
         n2 = request.POST.get('n2')
-        if len(str(n1)) <= 1 or len(str(n2)) <= 1:
-            messages.error(request, "Please ensure that you have given some text in both fields")
-            return render(request, 'home.html')
-        elif n1 != None and n2 != None:
-            if not n1.isalpha() or not n2.isalpha():
-                messages.error(request, "Please provide only valid names :(")
-                return render(request, 'home.html')
-            elif n1 == n2:
-                messages.error(request, "We cant guess your relation! Try initials combined with names.")
-                return render(request, 'home.html')
-        elif n1 is None and n2 is None:
-            messages.error(request, "Please ensure that you have given some text in both fields")
-            return render(request, 'home.html')
         str1 = n1
         str2 = n2
         if '.' in str1 or '.' in str2:
@@ -47,8 +35,23 @@ def home(request):
         str2 = ''.join(str2)
         str1 = str1.lower()
         str2 = str2.lower()
-        a = sorted(str1)
-        b = sorted(str2)
+        n1 = str1
+        n2 = str2
+        if len(str(n1)) <= 1 or len(str(n2)) <= 1:
+            messages.error(request, "Please ensure that you have given some text in both fields")
+            return render(request, 'home.html')
+        elif n1 != None and n2 != None:
+            if not n1.isalpha() or not n2.isalpha():
+                messages.error(request, "Please provide only valid names :(")
+                return render(request, 'home.html')
+            elif n1 == n2:
+                messages.error(request, "We cant guess your relation! Try initials combined with names.")
+                return render(request, 'home.html')
+        elif n1 is None and n2 is None:
+            messages.error(request, "Please ensure that you have given some text in both fields")
+            return render(request, 'home.html')
+        a = sorted(n1)
+        b = sorted(n2)
         freq1 = dict(Counter(a))
         freq2 = dict(Counter(b))
         c = copy.deepcopy(freq1)
